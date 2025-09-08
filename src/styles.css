@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+	padding:0px; margin:0px;
+	background-image:url(/assets/images/bg_entree2.png); background-repeat:repeat; background-size:100% 100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+a { text-decoration:none;}
+
+.containerEntree{
+	width:100%;
+	padding:0px;
+	max-width:1200px;
+	margin:0 auto; 
+	/*background-image:url(/assets/images/bg_entree2.png); background-size:100% 100%;*/
+	min-height:600px;
+}
+.containerEntree img{ width:auto; max-height:inherit !important; min-height:inherit;}
+.containerEntree .boite{
+	margin:0 auto 0 auto;
+	width:40%; max-width:1000px; height:100%;
+	min-height:600px;
+	min-height:850px; /* ie 8 */
+	position:relative;
+}
+.containerEntree .boite ul{
+	/*position:absolute;
+	top:22%; right:0;*/
+	background-color:RGBA(0,0,0,0.7);
+	padding:15px 40px;
+	list-style:none;
+	font-size:30pt;
+	text-align:center;
+	/*border-radius:0px 40px 0px 0px;*/
+}
+.containerEntree .boite li{ padding:20px 0px;}
+.containerEntree .boite ul li a{ color:#fff;}
+.containerEntree .boite img { width:100%; max-width:1000px; margin:20px 0px 0px 0px ; padding:20px 60px; background-color:RGBA(255,255,255,0.7); }
+
+.containerEntree .logo{ width:60%; text-align:center; margin:3% 0px;}
+.containerEntree .logo img{ width:70%;}
+.containerEntree .imgMachine{ text-align:center; margin:3% 0px; width:50%;}
+.containerEntree .imgMachine img{ width:100%;}
+
+.fltlft { float:left;}
+.fltrt{ float:right;}
+.clear { clear:both;}
+
+
+
+/* EXEMPLE SYNTAX
+@media 'not|only' 'mediatype' and (media feature) {
+    CSS-Code;
+}
+*/
+@media all and (max-device-width : 700px) and (orientation:landscape),  all and (max-device-width : 1024px) and (orientation:landscape), all and (max-device-width : 1024px) and (orientation:portrait){  
+.containerEntree{
+	min-height: inherit;
+	background-image:url(/assets/images/bg_entree2.png); background-size:100% 100%;
+}
+
+.containerEntree .boite{
+	min-height: inherit;
+	width:30%;
+	margin:0px 7% 0px 0px;
+}
+.containerEntree .boite ul{
+	padding:30px 40px;
+	font-size:30pt;
+}
+
+.containerEntree .logo{ width:60%;margin:3% 0px 0px 0px; }
+.containerEntree .logo img{ width:60%;}
+.containerEntree .imgMachine{ width:50%;}
+}
+@media all and (max-device-width : 400px) and (orientation:portrait){ 
+	
+.containerEntree .boite{
+	min-height: inherit !important;
+	height:auto;
+	width:100%;
+	margin: 0px auto;
+}
+
+.containerEntree{
+	background-image:url(/assets/images/bg_entree2.png); background-size:100% 100%;
+	min-height: inherit;
+}
+.containerEntree .boite{
+	min-height: inherit;
+	width:80%;
+	margin:0px 10%;
+}
+.containerEntree .boite ul{
+	padding:30px 40px;
+	font-size:40pt;
+}
+
+.containerEntree .logo{ width:100%; }
+.containerEntree .imgMachine{ width:100%; margin:0px;}
+.containerEntree .imgMachine img{ width:70%;}
+	
+}
