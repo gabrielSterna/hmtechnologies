@@ -9,4 +9,10 @@ import { RouterModule } from '@angular/router';
 })
 export class Navbar {
 
+  private activeLink: string = '';
+
+  private setActive(link: string){
+    this.activeLink = link;
+  }
+
 }
