@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -11,7 +11,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     RouterModule, TranslateModule
   ],
   templateUrl: './main.html',
-  styleUrl: './main.css'
+  styleUrls: ['../../../styles.css']
 })
 export class Main {
 
@@ -20,10 +20,19 @@ export class Main {
 
   }
 
+
   changeLang(lang: string) {
 
     this.translate.use(lang);
     
+  }
+
+  ngOnInit() {
+    document.body.classList.add('special-bg');
+  }
+  
+  ngOnDestroy() {
+    document.body.classList.remove('special-bg');
   }
 
 }
