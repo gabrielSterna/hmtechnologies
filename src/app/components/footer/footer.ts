@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-footer',
-  imports: [],
+  selector: 'hmtech-comp-footer',
+  imports: [RouterModule],
   templateUrl: './footer.html',
-  styleUrl: './footer.css'
+  styleUrl: '../../app.css',
 })
 export class Footer {
 

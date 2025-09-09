@@ -5,7 +5,7 @@ import { Header } from "../../../../components/header/header";
   selector: 'app-service3d',
   imports: [Header],
   templateUrl: './service3d.html',
-  styleUrl: './service3d.css'
+  styleUrl: '../../../../app.css'
 })
 export class Service3d {
 

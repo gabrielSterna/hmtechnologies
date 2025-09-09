@@ -5,7 +5,7 @@ import { Header } from "../../../../components/header/header";
   selector: 'hmtech-home-pages-achivements',
   imports: [Header],
   templateUrl: './achivements.html',
-  styleUrl: './achivements.css'
+  styleUrl: '../../../../app.css'
 })
 export class Achivements {
 

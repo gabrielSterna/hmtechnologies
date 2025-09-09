@@ -5,7 +5,7 @@ import { Header } from "../../../../components/header/header";
   selector: 'app-contact-us',
   imports: [Header],
   templateUrl: './contact-us.html',
-  styleUrl: './contact-us.css'
+  styleUrl: '../../../../app.css'
 })
 export class ContactUs {
 

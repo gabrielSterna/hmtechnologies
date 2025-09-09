@@ -5,7 +5,7 @@ import { Header } from "../../../../components/header/header";
   selector: 'app-drill-size-chart',
   imports: [Header],
   templateUrl: './drill-size-chart.html',
-  styleUrl: './drill-size-chart.css'
+  styleUrl: '../../../../app.css'
 })
 export class DrillSizeChart {
 
