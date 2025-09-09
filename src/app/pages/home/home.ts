@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { Header } from "../../components/header/header";
 
 @Component({
   selector: 'hmtech-pages-home',
-  imports: [],
+  imports: [Header],
   templateUrl: './home.html',
-  styleUrl: './home.css'
+  styleUrls: ['./home.css'] 
 })
 export class Home {
 

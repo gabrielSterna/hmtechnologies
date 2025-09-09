@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
 
@@ -14,5 +14,16 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './main.css'
 })
 export class Main {
+
+
+  constructor(private translate: TranslateService){
+
+  }
+
+  changeLang(lang: string) {
+
+    this.translate.use(lang);
+    
+  }
 
 }

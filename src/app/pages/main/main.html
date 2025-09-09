@@ -10,14 +10,14 @@
     <div class=" fltrt boite">
         <ul>
             <li>
-                <a href="/fr/accueil.html">Français</a>
-                <p>{{'example.p' | translate}}</p>
+                <a [routerLink]="['home']" (click)="changeLang('fr')">Français</a>
+                
             </li>
             <li>
-                <a href="en/accueil.html">English</a>
+                <a [routerLink]="['home']" (click)="changeLang('en')">English</a>
             </li>
             <li>
-                <a href="es/accueil.html">Español</a>
+                <a [routerLink]="['home']" (click)="changeLang('es')">Español</a>
             </li>
         </ul>
     </div>

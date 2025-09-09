@@ -1,0 +1,477 @@
+/* TIPS :
+-property:value								// IE6 Hack
+*property:value								// IE7 and IE6 Hack
+*+html							.Class		// IE7 Only Hack
+*:first-child+html  .Class		// IE7 Only Hack
+body:nth-of-type(1) .Class		// Chrome and Safari Hack
+body:-moz-last-node .Class		// Firefox Hack
+*/
+/* YOU CAN EDIT THIS CSS BUT,
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!IMPORTANT:TO ADD CSS TO THIS FILE GO TO THE END OF THIS FILE!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+At line 280 Or search for "You may add your CSS here" Or
+Anywhere below the section named: "Main Website CSS" to be more precise
+Note :Line may change depending of size of this file.
+*/
+
+/*--------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+												General, Color et Font Size
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+--------------------------------------------------------------------*/
+
+/*---------------------------------------------
+									General
+---------------------------------------------*/
+
+body {
+	/*
+	background-image:url(/web/20181017112958im_/http://hm-techno.com/Images/Background.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	*/
+	background-color:#FFFFFF;
+	color:#010101;/*Keep the same as class 'FontColorDefault'*/
+	/*font-size:11px;Keep the same as class 'FontSizeDefault'*/
+	font-family: Arial, Helvetica, sans-serif; 
+	background-image:url(/web/20181017112958im_/http://hm-techno.com/images/bg_degrade.jpg); background-position:center; background-repeat:repeat-y;
+}
+
+.FontColorDefault {
+	color:#010101;/*Keep the same as color in 'body'*/
+}
+.FontSizeDefault {
+	font-size:11px;/*Keep the same as color in 'body'*/
+}
+
+input[type="checkbox"] {
+	margin-top:-1;
+	width:25px;
+}
+
+input[type="text"] {
+	margin-top:-1;
+}
+
+.br {
+	height:10px;
+}
+
+/*---------------------------------------------
+									Font Size
+---------------------------------------------*/
+/********1********/
+h1 {
+	font-size:30px;
+}
+h1 a {
+	font-size:30px;
+}
+.FontSize1 {
+	font-size:30px;
+}
+.FontSize1 a {
+	font-size:30px;
+}
+/********2********/
+h2 {
+	font-size:25px;
+}
+h2 a {
+	font-size:25px;
+}
+.FontSize2 {
+	font-size:25px;
+}
+.FontSize2 a {
+	font-size:25px;
+}
+/********3********/
+h3 {
+	font-size:20px;
+}
+h3 a {
+	font-size:20px;
+}
+.FontSize3 {
+	font-size:20px;
+}
+.FontSize3 a {
+	font-size:20px;
+}
+/********4********/
+h4 {
+	font-size:15px;
+}
+h4 a {
+	font-size:15px;
+}
+.FontSize4 {
+	font-size:15px;
+}
+.FontSize4 a {
+	font-size:15px;
+}
+/********5********/
+/*In a perfect work this should be the same as FontSizeDefault*/
+/*Start same as FontSizeDefault*/
+h5 {
+	font-size:11px;
+}
+h5 a {
+	font-size:11px;
+}
+.FontSize5 {
+	font-size:11px;
+}
+.FontSize5 a {
+	font-size:11px;
+}
+/*End same as FontSizeDefault*/
+/********6********/
+.FontSize6 {
+	font-size:8pt;
+	letter-spacing:1px;
+}
+.FontSize6 a {
+	font-size:8pt;
+	letter-spacing:1px;
+}
+/********7********/
+.FontSize7 {
+	font-size:7pt;
+	letter-spacing:1px;
+}
+.FontSize7 a {
+	font-size:7pt;
+	letter-spacing:1px;
+}
+/********8********/
+.FontSize8 {
+	font-size:6pt;
+	letter-spacing:1px;
+}
+.FontSize8 a {
+	font-size:6pt;
+	letter-spacing:1px;
+}
+
+/*---------------------------------------------
+									Link Color
+---------------------------------------------*/
+
+a {
+	color: #7a8189;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#02578a;
+	text-decoration:none;
+}
+
+/*a:visited {
+	color:#00FF00;
+	text-decoration:none;
+}*/
+
+/*---------------------------------------------
+									Default WebSite Button
+---------------------------------------------*/
+
+.DefaultButton { /*Put this class on a '<A>' HTML Element*/
+	background-color:#777777;
+	
+	display:inline-block;
+	
+	color:#FFFFFF;
+	text-decoration:none;
+
+	border:0px none transparent;
+	padding:6px 10px;
+	margin:0px;
+}
+
+.DefaultButton:Hover {
+	background-color:#FFFFFF;
+	
+	color:#000000;
+	text-decoration:none;
+	
+	border:1px solid #000000;
+	padding:5px 9px;
+	margin:0px;
+}
+
+/*---------------------------------------------
+									Font Color
+---------------------------------------------*/
+
+.FontColorName {
+	color:#000000;
+}
+
+/*---------------------------------------------
+									Background Color
+---------------------------------------------*/
+
+.BackgroundName {
+	background-color:#000000;
+}
+
+.BackgroundLightEffect {
+	background-image:url(/web/20181017112958im_/http://hm-techno.com/5/5/25/Images/Effects/White.html);
+	background-repeat:repeat;
+}
+
+
+/*--------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+												Main Website CSS
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+--------------------------------------------------------------------*/
+
+/* TIPS :
+-property:value								// IE6 Hack
+*property:value								// IE7 and IE6 Hack
+*+html							.Class		// IE7 Only Hack
+*:first-child+html  .Class		// IE7 Only Hack
+body:nth-of-type(1) .Class		// Chrome and Safari Hack
+body:-moz-last-node .Class		// Firefox Hack
+*/
+
+/*---------------------------------------------
+									Main.master
+---------------------------------------------*/
+
+.MainBox {
+	width:900px;
+}
+
+/*You may add your CSS here
+.YourClass {
+	property:value;
+}
+*/
+
+
+
+
+
+
+
+
+/* ****************** site web ************************ */
+.container{ width:80%; max-width:1020px; min-width:1020px; padding:0px; margin:0 auto;background-image:url(/web/20181017112958im_/http://hm-techno.com/images/bg_degrade.jpg); background-position:center; background-repeat:repeat-y; color:#535353;}
+.header img{ padding:20px 20px 20px 20px;}
+
+.contentText{width:75%; margin:0 auto; margin-top:20px;}
+
+.content{ padding:20px; min-height:570px;}
+.content-40{ width:40%; margin:0 auto;}
+.content-50{ width:50%; margin:0 auto;}
+.content-70{ width:70%; margin:0 auto;}
+.content-70 ul{ padding:10px 0px 20px 30px; font-size:12pt; line-height:15pt;}
+.content-70 h2{ padding:10px 0px 20px 0px; text-align:justify !important;}
+.content-70 h3{ padding:10px 0px 20px 0px; font-weight:normal;  text-align:justify !important;}
+
+.content2 ul{ padding:10px 0px 20px 30px; font-size:12pt; line-height:15pt;}
+.content2 h2{ padding:10px 0px 20px 0px; text-align:justify !important;}
+.content2 h3{ padding:10px 0px 20px 0px; font-weight:normal;  text-align:justify !important;}
+.content2 img{ width:100%;}
+
+.slogan img { padding:22px 100px 10px 0px;}
+div.texte-bg-accueil{width:984px; height:375px;}
+.texte-bg-accueil img{ position:absolute; width:984px; height:375px; z-index:8;}
+/*.texte-bg-accueil p{ position:absolute; margin:185px 0px 0px 30px; width:400px; z-index:10; font-size:12pt; line-height:14pt; letter-spacing:1pt; text-align:justify;}
+*/div.accueil-btn {width:214px; height:168px; border:1px #d3d3d3 solid; padding:1px; margin:20px 10px;}
+div.accueil-btn a div{ width:214px; height:168px;background-image:url(/web/20181017112958im_/http://hm-techno.com/images/bg-accueil-btn.jpg); background-position:bottom; background-repeat:no-repeat;}
+div.accueil-btn a:hover div{ width:214px; height:168px; background-image:url(/web/20181017112958im_/http://hm-techno.com/images/bg-accueil-btn-o.jpg); background-position:bottom; background-repeat:no-repeat;}
+.text span{font-size:14pt; padding:0px 0px 0px 5px; line-height:16pt; position:relative; top:7px;} 
+.text a span{color:#02578a;} 
+.text a:hover span{color:#02578a;} 
+
+div.ordre-pages{ padding:0px 0px 15px 0px; border-bottom:1px #ccc solid; margin:0px 0px 20px 0px;}
+.bleu{color:#02578a; /*max-width:665px;*/  margin:0 auto;}
+div.btn-services3D{ padding:20px 0px; text-align:center;}
+.btn-services3D a{ color:#02578a; font-size:14pt; letter-spacing:2pt;}
+.btn-services3D img{ padding:0px 0px 10px 0px;}
+
+.box_skitter .label_skitter p span.bullet{ position: absolute; left:0px;}
+.box_skitter .label_skitter p { padding:10px 0px 0px 0px !important;}
+
+
+.adresse{ text-align:left; font-size:13pt; line-height:18pt; color:#010101;}
+div.map {border:1px #535353 solid; width:370px; height:280px; margin:0px 0px 40px 0px;}
+.lienGoogle{ position:relative; top:-50px;}
+.lienGoogle a{ color:#02578a;}
+.equipe h3 { text-transform:uppercase; padding:0px 0px 0px 0px; margin:0px; font-weight:bold;}
+.equipe h3 span{ text-transform: none; font-weight: normal;}
+.equipe { padding:0px 0px 20px 0px; font-size:11pt; color:#010101;}
+.equipe h3 { color:#02578a;}
+.equipe a{ color:#02578a;}
+.equipe a:hover{ color:#000;}
+
+ 
+
+div.footer{ font-size:11pt; width:100%; text-align:center; margin:20px 0px 0px 0px; background-image:url(/web/20181017112958im_/http://hm-techno.com/images/bg-footer.jpg); padding:75px 0px 50px 0px; background-position:top; background-repeat:repeat-x;}
+.footer a{ padding:10px;}
+.footer hr{ width:80%; border:1px #ccc solid;}
+
+
+.contentTexteImg{ position:absolute; margin:175px 0px 0px 30px; width:400px; z-index:10; font-size:12pt; line-height:14pt; letter-spacing:1pt; text-align:justify;}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid #eee; 
+    border-top: 1px solid #eee;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #C3C3C3;
+    border: 4px solid #C3C3C3;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+} 
+#boxscroll{
+ overflow:auto;
+ -webkit-overflow-scrolling: touch;
+ max-height: 110px;
+}
+
+	.border_box h2 { padding:0px; margin:0px;}
+	.border_box p{ padding:0px; margin:8px 0px 0px 0px; color:#6d6e71; font-size:12pt;}
+	
+	
+	.bg_accueil{ width:100%; border-radius:0px 80px 0px 0px; min-height:375px; background-image:url(/web/20181017112958im_/http://hm-techno.com/images/bg-accueil2.jpg); background-size:100% 100%;}
+	.bg_accueil a { color:#6d6e71;}
+	.accueilTitre {/*width:50%;*/ margin:50px 0px 0px 50px;}
+	.accueilImg {width:50%; margin:30px 0px 0px 0px;}
+	.accueilTitre img, .accueilImg img { width:90%;}
+	.accueilTexte {width:40%; margin:5%; font-size:12pt; line-height:14pt; letter-spacing:1pt; text-align:justify; }
+
+@media all and (max-device-width : 1024px) and (orientation:landscape), all and (max-device-width : 1024px) and (orientation:portrait){
+div.btn-services3D{ padding:10px 0px; text-align:center;}
+.btn-services3D a{ color:#02578a; font-size:14pt; letter-spacing:2pt;}
+.btn-services3D img{ padding:0px 0px 8px 0px; width:30%;}
+ 
+	body { background-image: inherit; margin:0px; padding:0px; }
+	h2 {font-size:23px; }
+	img{ /*max-width:600px;*/}
+	.MainBox { max-width:640px; width:auto !important; }
+	.header{ position:fixed; height:110px; width:100%; z-index:1000; top:0px;}
+
+	.container{ width:100%; min-width: inherit; padding:0px 0px; margin:0 auto; background-image: inherit; color:#535353; }
+	.content{ margin:100px auto 0px auto;}
+	.content2 ul{ padding:10px 0px 20px 30px; font-size:16pt; line-height:18pt;}
+	.content2 h2{ padding:10px 0px 20px 0px; text-align:justify !important; font-size:22pt;}
+	.content2 h3{ padding:10px 0px 20px 0px; font-weight:normal;  text-align:justify !important; font-size:22pt;}
+
+	/* banniere accueil */
+	.accueilTitre {width:80%; margin:50px 0px 0px 30px;}
+	.accueilImg {width:95%; margin:30px 0px 0px 0px;}
+	.accueilTexte { width:90%; font-size: inherit; }
+	.accueilTexte p{ font-size:22pt;  line-height:24pt;}
+	
+	.content-70{ width:auto; margin:0 auto;}
+	.bleu{/*max-width:640px;*/ max-width: inherit;}
+	div.ordre-pages{ font-size:14pt;}
+	
+	.border_box p{ font-size:14pt;}
+
+	.logo, .slogan{ width:40%;}
+	.logo img, .slogan img{ width:90%;}
+	
+	div.texte-bg-accueil{max-width:640px; width:auto !important; height:375px; position:relative;}
+	.texte-bg-accueil img{ position:absolute; width:auto !important;/* max-width:600px;*/ height:auto; z-index:8;}
+	.contentTexteImg{ position:absolute; margin:100px 0px 0px 30px; width:35%; z-index:10; font-size:12pt; line-height:14pt; letter-spacing:1pt; text-align:justify;}
+	.contentText{width:100%; margin:0 auto; margin-top:20px;}
+	.texte-bg-accueil p{ font-size:18pt; line-height:18pt;}
+	
+	/*.adresse{ width:50%; text-align:left; font-size:20pt !important; line-height:24pt !important; }*/
+	.adresse img{ padding:0px 0px 20px 0px; }
+	div.map{ margin:0px; }
+    .mapContent { width:50%; margin:0px 0px 0px 0px;position:relative; top:-50px;}
+	/*.lienGoogle{ position:relative; top:0px; font-size:18pt !important;}*/
+	
+	div.footer { font-size:18pt !important;}
+	.mobile{ display:none;}
+}
+@media all and (max-device-width : 700px) and (orientation:landscape), all and (max-device-width : 700px) and (orientation:portrait){
+	div.btn-services3D{ padding:20px 0px; text-align:center;}
+	.btn-services3D a{ color:#02578a; font-size:14pt; letter-spacing:2pt;}
+	.btn-services3D img{ padding:0px 0px 10px 0px; width:50%;}
+	
+}
+@media all and (max-device-width : 400px) and (orientation:portrait){ 
+	h2 { font-size:26px; }
+	.bleu h2 { font-size:36px !important;}
+	.content{ margin:130px auto 0px auto;}
+	/* banniere accueil */
+	.accueilTexte p{ font-size:26pt; line-height:28pt;}
+
+	div.ordre-pages{ font-size:20pt;}
+	.texte-bg-accueil img{ max-width:600px;}
+	
+	.adresse img { width:80%;}
+}
+
+
+
+.fltlft{ float:left;}
+.fltrt{ float:right;}
+.clear{ clear:both;}
+/*
+     FILE ARCHIVED ON 11:29:58 Oct 17, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:56:31 Sep 08, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.499
+  exclusion.robots: 0.022
+  exclusion.robots.policy: 0.013
+  esindex: 0.01
+  cdx.remote: 33.31
+  LoadShardBlock: 184.234 (3)
+  PetaboxLoader3.datanode: 176.171 (4)
+  load_resource: 155.84
+  PetaboxLoader3.resolve: 77.804
+*/

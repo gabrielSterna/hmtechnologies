@@ -1,0 +1,645 @@
+#cssmenu {
+  position: relative;
+  height: 44px;
+  /*background: #2b2f3a;*/
+  background-image:linear-gradient(#ececec, #fff);
+  border:1px #ddd solid;
+  width: auto;
+  font-family:Arial, Helvetica, sans-serif;
+}
+#cssmenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+#cssmenu > ul {
+  position: relative;
+  display: block;
+  /*background: #2b2f3a;*/
+  height: 32px;
+  width: 119%;
+  z-index: 500;
+}
+#cssmenu > ul > li {
+  display: block;
+  position: relative;
+  width:13.7%;
+  float: left;
+  text-align:center;
+  margin: 0;
+  padding: 0;
+  border-right:1px #ddd solid;
+	height: 45px;
+}
+#cssmenu > ul > #menu-button {
+  display: none;
+}
+#cssmenu ul li a {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+#cssmenu > ul > li > a {
+  font-size: 14px;
+  /*font-weight: bold;*/
+  padding: 9px 5px;
+  color: #7a8189;
+  /*text-transform: uppercase;*/
+  -webkit-transition: color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out;
+  -ms-transition: color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+}
+
+/* fr */
+#cssmenu ul > li.btn-accueil-fr { width:9%;} #cssmenu ul > li.btn-accueil-fr > a { padding:12px 0px;} #cssmenu ul > li.btn-accueil-fr > a img{ padding:0px; text-align:center;}
+#cssmenu ul > li.btn-services3D-fr { width:14%;}
+#cssmenu ul > li.btn-usinagesCNC-fr { width:15%;}
+#cssmenu ul > li.btn-realisations-fr { width:15%;}
+#cssmenu ul > li.btn-equivalences-fr { width:21%; position: relative; bottom: 0px; border-right:1px solid #ddd; border-right: solid 1px #ddd; max-height: 45px; }
+#cssmenu ul > li.btn-contacts-fr { width:12%;}
+#cssmenu ul > li.btn-langue-fr { width:5.5%; border-right:1px solid #ddd;}
+#cssmenu ul > li.btn-langue-fr a{color: #02578a !important;}
+#cssmenu ul > li.btn-langue-fr.last { border-right:0px;}
+/* en */
+#cssmenu ul > li.btn-accueil-en { width:8%;} #cssmenu ul > li.btn-accueil-en > a { padding:12px 0px;} #cssmenu ul > li.btn-accueil-en > a img{ padding:0px; text-align:center;}
+#cssmenu ul > li.btn-services3D-en { width:14%;}
+#cssmenu ul > li.btn-usinagesCNC-en { width:16%;}
+#cssmenu ul > li.btn-realisations-en { width:14%;}
+#cssmenu ul > li.btn-equivalences-en { width:25%; position: relative; bottom: 0px; border-right:1px solid #ddd; border-right: solid 1px #ddd; max-height: 45px;}
+#cssmenu ul > li.btn-contacts-en { width:11%;}
+#cssmenu ul > li.btn-langue-en { width:5.5%; border-right:1px solid #ddd;}
+#cssmenu ul > li.btn-langue-en a{color: #02578a !important;}
+#cssmenu ul > li.btn-langue-en.last { border-right:0px;}
+/* es */
+#cssmenu ul > li.btn-accueil-es { width:8%;} #cssmenu ul > li.btn-accueil-es > a { padding:12px 0px;} #cssmenu ul > li.btn-accueil-es > a img{ padding:0px; text-align:center;}
+#cssmenu ul > li.btn-services3D-es { width:14%;}
+#cssmenu ul > li.btn-usinagesCNC-es{ width:16%;}
+#cssmenu ul > li.btn-realisations-es { width:18%;}
+#cssmenu ul > li.btn-equivalences-es { width:21%; position: relative; bottom: 0px; border-right:1px solid #ddd; border-right: solid 1px #ddd; max-height: 45px; }
+#cssmenu ul > li.btn-contacts-es { width:11%;}
+#cssmenu ul > li.btn-langue-es { width:5.5%;}
+#cssmenu ul > li.btn-langue-es a{color: #02578a !important;}
+#cssmenu ul > li.btn-langue-es.last { border-right:0px;}
+
+
+
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 32px;
+}
+#cssmenu > ul > li:hover > a {
+  /*color: #ffffff;*/
+}
+#cssmenu li.has-sub::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+#cssmenu > ul > li.has-sub::after {
+  right: 10px;
+  top: 20px;
+  border: 5px solid transparent;
+  border-top-color: #7a8189;
+}
+#cssmenu > ul > li:hover::after {
+  border-top-color: #ffffff;
+}
+#indicatorContainer {
+  position: absolute;
+  height: 12px;
+  width: 100%;
+  bottom: 0px;
+  overflow: hidden;
+  z-index: -1;
+}
+#pIndicator {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  border: 12px solid transparent;
+  border-top-color: #2b2f3a;
+  z-index: -2;
+  -webkit-transition: left .25s ease;
+  -moz-transition: left .25s ease;
+  -ms-transition: left .25s ease;
+  -o-transition: left .25s ease;
+  transition: left .25s ease;
+}
+#cIndicator {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  border: 12px solid transparent;
+  border-top-color: #2b2f3a;
+  top: -12px;
+  right: 100%;
+  z-index: -2;
+}
+#cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
+  top: 70px;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease, top .25s ease;
+  -moz-transition: opacity .3s ease, top .25s ease;
+  -ms-transition: opacity .3s ease, top .25s ease;
+  -o-transition: opacity .3s ease, top .25s ease;
+  transition: opacity .3s ease, top .25s ease;
+  z-index: 900;
+}
+#cssmenu ul ul ul {
+  top: 37px;
+  padding-left: 5px;
+}
+#cssmenu ul ul li {
+  position: relative;
+}
+#cssmenu > ul > li:hover > ul {
+  left: auto;
+  top: 44px;
+  opacity: 1;
+}
+#cssmenu ul ul li:hover > ul {
+  left: 170px;
+  top: 0;
+  opacity: 1;
+}
+#cssmenu ul ul li a {
+  width: 130px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #9ea2a5;
+  background: #fff;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+}
+#cssmenu ul ul li:hover > a {
+  background: #f6f6f6;
+  color: #8c9195;
+}
+#cssmenu ul ul li:last-child > a,
+#cssmenu ul ul li.last > a {
+	border-bottom: 0;
+}
+#cssmenu > ul > li.last > a{ color:#02578a; border-right:0px #ddd solid;}
+#cssmenu > ul > li.active > a{ color:#02578a; background-image:linear-gradient(#fff,#ececec); padding: 9px 5px; height: 27px;}
+
+.submenuArrow {
+  border: 6px solid transparent;
+  width: 0;
+  height: 0;
+  border-bottom-color: #fff;
+  position: absolute;
+  top: -12px;
+}
+#cssmenu ul ul li.has-sub::after {
+  border: 4px solid transparent;
+  border-left-color: #9ea2a5;
+  right: 10px;
+  top: 12px;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease, right 0.2s ease;
+}
+#cssmenu ul ul li.has-sub:hover::after {
+  border-left-color: #fff;
+  right: -5px;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+@media all and (max-device-width : 700px) and (orientation:landscape), all and (max-device-width : 700px) and (orientation:portrait),  all and (max-device-width : 1024px) and (orientation:landscape), all and (max-device-width : 1024px) and (orientation:portrait){  
+	#cssmenu > ul > li > a {
+	  font-size: 14px;
+	  /*font-weight: bold;*/
+	  padding: 16px 15px 15px 5px;
+	  color: #fff;
+	  /*text-transform: uppercase;*/
+	  -webkit-transition: color 0.25s ease-out;
+	  -moz-transition: color 0.25s ease-out;
+	  -ms-transition: color 0.25s ease-out;
+	  -o-transition: color 0.25s ease-out;
+	  transition: color 0.25s ease-out;
+	}
+
+  #cssmenu {
+  	height: 90px;
+    width: auto;
+	margin:0px 0px 0px 0px ;
+	z-index:900;
+	background-image:url(/web/20220424111352im_/http://hm-techno.com/images/logo_HMtechnologies.png);
+	background-size:auto 90%; background-repeat:no-repeat; background-position: 1% center;
+	background-color:RGBA(255,255,255,0.8);
+  }
+  
+  #cssmenu.align-center ul {
+    text-align: left;
+  }
+  #cssmenu.align-right > ul > li {
+    float: none;
+  }
+  #cssmenu ul {
+    width: auto;
+  }
+  #cssmenu .submenuArrow,
+  #cssmenu #indicatorContainer {
+    display: none;
+  }
+  #cssmenu > ul {
+    height: auto;
+    display: block;
+	position:absolute;
+	width:100%;
+  }
+  #cssmenu > ul > li {
+    float: none;
+	border-right:0px;
+	width:auto;
+	 margin:0px;
+  }
+  #cssmenu li,
+  #cssmenu > ul > li {
+    display: none;
+  }
+  #cssmenu ul ul,
+  #cssmenu ul ul ul,
+  #cssmenu ul > li:hover > ul,
+  #cssmenu ul ul > li:hover > ul,
+  #cssmenu.align-right ul ul,
+  #cssmenu.align-right ul ul ul,
+  #cssmenu.align-right ul > li:hover > ul,
+  #cssmenu.align-right ul ul > li:hover > ul {
+    position: relative;
+    left: auto;
+    top: auto;
+    opacity: 1;
+    padding-left: 0;
+    padding-right: 0;
+    right: auto;
+  }
+  #cssmenu ul .has-sub::after {
+    display: none;
+  }
+  #cssmenu ul li a {
+    padding: 12px 20px;
+  }
+  #cssmenu ul ul li a {
+    border: 0;
+    background: none;
+    width: auto;
+    padding: 8px 35px;
+	background-image: linear-gradient(#fff,#ececec);
+  }
+  #cssmenu.align-right ul ul li a {
+    text-align: left;
+  }
+  #cssmenu ul ul li:hover > a {
+    background: none;
+    color: #8c9195;
+  }
+  #cssmenu ul ul ul a {
+    padding: 8px 50px;
+  }
+  #cssmenu ul ul ul ul a {
+    padding: 8px 65px;
+  }
+  #cssmenu ul ul ul ul ul a {
+    padding: 8px 80px;
+  }
+  #cssmenu ul ul ul ul ul ul a {
+    padding: 8px 95px;
+  }
+  #cssmenu > ul > #menu-button {
+    display: block;
+    cursor: pointer;
+	/*padding:0px 30px 0px 0px ;*/
+	width:100%;
+	text-align:left;
+	/*background-image:url(/web/20220424111352im_/http://hm-techno.com/images/btn_menu.png);*/
+	background-repeat:no-repeat;
+	background-position: 98% center;
+	height: 90px;
+	background-size: auto 80%;
+  }
+  #cssmenu > ul.fr > #menu-button {background-image:url(/web/20220424111352im_/http://hm-techno.com/images/btn_menu_fr.png);}
+  #cssmenu > ul.en > #menu-button {background-image:url(/web/20220424111352im_/http://hm-techno.com/images/btn_menu_en.png);}
+  #cssmenu > ul.es > #menu-button {background-image:url(/web/20220424111352im_/http://hm-techno.com/images/btn_menu_es.png);}
+  
+  #cssmenu #menu-button > a {
+    padding: 20px 20px;
+	font-size:22pt;
+	color:#fff;
+  }
+  #cssmenu > ul > li.last > a{ color:#fff; border-right:0px #ddd solid;}
+  #cssmenu > ul > li.active > a{ color:#fff; background-image: inherit;}
+
+  #cssmenu ul.open li,
+  #cssmenu > ul.open > li {
+    display: block;
+	float:left;
+	/*background-color:RGBA(110,110,110,0.8);*/
+	/*margin:5px;*/
+  }
+  #cssmenu > ul.open > li#menu-button > a {
+    /*color: #010101;*/
+    /*border-bottom: 1px solid rgba(150, 150, 150, 0.1);*/
+	/*margin: 5px;*/
+	float: left;
+  }
+  
+
+  #cssmenu ul ul::after {
+    display: none;
+  }
+  #cssmenu #menu-button::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    /*border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;*/
+    right: 20px;
+    top: 31px;
+  }
+  #cssmenu #menu-button::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    /*border-top: 3px solid #fff;*/
+    right: 20px;
+    top: 42px;
+	background-color:inherit;
+  }
+  #cssmenu ul.open #menu-button::after,
+  #cssmenu ul.open #menu-button::before {
+    border-color: #fff;
+  }
+  
+  #cssmenu > ul.open{ padding:0px 0px 10px 0px ; background-color:RGBA(255,255,255,0.8);background-image: url(/web/20220424111352im_/http://hm-techno.com/images/logo_HMtechnologies.png); background-size: 276px;
+background-repeat: no-repeat; background-position: 1% 2%;}
+  #cssmenu ul > li a{ font-size:16pt ;}
+  #cssmenu ul > li.active {margin:0px 0px 5px 5px; top:5px; background-color:RGBA(2,86,138,0.8) !important; padding:3px 10px;}
+  #cssmenu ul > li.btn-langue-fr a,
+  #cssmenu ul > li.btn-langue-en a,
+  #cssmenu ul > li.btn-langue-es a{color: #fff !important; }
+
+	#cssmenu ul > li.btn-accueil-fr,
+	#cssmenu ul > li.btn-accueil-en,
+	#cssmenu ul > li.btn-accueil-es {width:auto !important; padding:2px 35px; margin:0px 0px 8px 8px; position:relative; top:5px;background-color:RGBA(110,110,110,0.8); height: 81px; }
+	#cssmenu ul > li.btn-accueil-fr img,
+	#cssmenu ul > li.btn-accueil-en img,
+	#cssmenu ul > li.btn-accueil-es img{ content:url(/web/20220424111352im_/http://hm-techno.com/images/btn-accueil-blc.png); height:25px;}
+	
+	#cssmenu ul > li.btn-services3D-fr,
+	#cssmenu ul > li.btn-usinagesCNC-fr,
+	#cssmenu ul > li.btn-realisations-fr,
+	#cssmenu ul > li.btn-equivalences-fr,
+	#cssmenu ul > li.btn-contacts-fr,
+	#cssmenu ul > li.btn-langue-fr,
+	
+	#cssmenu ul > li.btn-services3D-en,
+	#cssmenu ul > li.btn-usinagesCNC-en,
+	#cssmenu ul > li.btn-realisations-en,
+	#cssmenu ul > li.btn-equivalences-en,
+	#cssmenu ul > li.btn-contacts-en,
+	#cssmenu ul > li.btn-langue-en,
+	
+	#cssmenu ul > li.btn-services3D-es,
+	#cssmenu ul > li.btn-usinagesCNC-es,
+	#cssmenu ul > li.btn-realisations-es,
+	#cssmenu ul > li.btn-equivalences-es,
+	#cssmenu ul > li.btn-contacts-es,
+	#cssmenu ul > li.btn-langue-es { width:auto !important; padding:0px 10px 40px 10px; margin:0px 0px 8px 8px; position:relative; top:5px; border-right:0px solid #ddd; 
+	background-color:RGBA(110,110,110,0.8);}
+	
+}
+
+
+@media all and (max-device-width : 400px) and (orientation:portrait){ 
+	#cssmenu > ul > li > a {
+	  font-size: 16px;
+	  /*font-weight: bold;*/
+	  padding: 15px 5px;
+	  color: #fff;
+	  /*text-transform: uppercase;*/
+	  -webkit-transition: color 0.25s ease-out;
+	  -moz-transition: color 0.25s ease-out;
+	  -ms-transition: color 0.25s ease-out;
+	  -o-transition: color 0.25s ease-out;
+	  transition: color 0.25s ease-out;
+	}
+
+  #cssmenu {
+  	height: 120px;
+    width: auto;
+	margin:0px 0px 0px 0px ;
+	z-index:900;
+	background-image:url(/web/20220424111352im_/http://hm-techno.com/images/logo_HMtechnologies.png);
+	background-size:auto 90%; background-repeat:no-repeat; background-position: 1% center;
+	background-color:RGBA(255,255,255,0.8);
+  }
+  
+  #cssmenu.align-center ul {
+    text-align: left;
+  }
+  #cssmenu.align-right > ul > li {
+    float: none;
+  }
+  #cssmenu ul {
+    width: auto;
+  }
+  #cssmenu .submenuArrow,
+  #cssmenu #indicatorContainer {
+    display: none;
+  }
+  #cssmenu > ul {
+    height: auto;
+    display: block;
+	position:absolute;
+	width:100%;
+  }
+  #cssmenu > ul > li {
+    float: none;
+	border-right:0px;
+	width:auto;
+	 margin:0px;
+  }
+  #cssmenu li,
+  #cssmenu > ul > li {
+    display: none;
+  }
+  #cssmenu ul ul,
+  #cssmenu ul ul ul,
+  #cssmenu ul > li:hover > ul,
+  #cssmenu ul ul > li:hover > ul,
+  #cssmenu.align-right ul ul,
+  #cssmenu.align-right ul ul ul,
+  #cssmenu.align-right ul > li:hover > ul,
+  #cssmenu.align-right ul ul > li:hover > ul {
+    position: relative;
+    left: auto;
+    top: auto;
+    opacity: 1;
+    padding-left: 0;
+    padding-right: 0;
+    right: auto;
+  }
+  #cssmenu ul .has-sub::after {
+    display: none;
+  }
+  #cssmenu ul li a {
+    padding: 12px 20px;
+  }
+  #cssmenu ul ul li a {
+    border: 0;
+    background: none;
+    width: auto;
+    padding: 8px 35px;
+	background-image: linear-gradient(#fff,#ececec);
+  }
+  #cssmenu.align-right ul ul li a {
+    text-align: left;
+  }
+  #cssmenu ul ul li:hover > a {
+    background: none;
+    color: #8c9195;
+  }
+  #cssmenu ul ul ul a {
+    padding: 8px 50px;
+  }
+  #cssmenu ul ul ul ul a {
+    padding: 8px 65px;
+  }
+  #cssmenu ul ul ul ul ul a {
+    padding: 8px 80px;
+  }
+  #cssmenu ul ul ul ul ul ul a {
+    padding: 8px 95px;
+  }
+  #cssmenu > ul > #menu-button {
+    display: block;
+    cursor: pointer;
+	/*padding:0px 30px 0px 0px ;*/
+	width:100%;
+	text-align:left;
+	/*background-image:url(/web/20220424111352im_/http://hm-techno.com/images/btn_menu.png);*/
+	background-repeat:no-repeat;
+	background-position: 98% center;
+	height: 120px;
+	background-size: auto 80%;
+  }
+  #cssmenu > ul.fr > #menu-button {background-image:url(/web/20220424111352im_/http://hm-techno.com/images/btn_menu_fr.png);}
+  #cssmenu > ul.en > #menu-button {background-image:url(/web/20220424111352im_/http://hm-techno.com/images/btn_menu_en.png);}
+  #cssmenu > ul.es > #menu-button {background-image:url(/web/20220424111352im_/http://hm-techno.com/images/btn_menu_es.png);}
+  
+  #cssmenu #menu-button > a {
+    padding: 20px 20px;
+	font-size:22pt;
+	color:#fff;
+  }
+  #cssmenu > ul > li.last > a{ color:#fff; border-right:0px #ddd solid;}
+  #cssmenu > ul > li.active > a{ color:#fff; background-image: inherit;}
+
+  #cssmenu ul.open li,
+  #cssmenu > ul.open > li {
+    display: block;
+	float:left;
+	/*background-color:RGBA(110,110,110,0.8);*/
+	/*margin:5px;*/
+  }
+  #cssmenu > ul.open > li#menu-button > a {
+    /*color: #010101;*/
+    /*border-bottom: 1px solid rgba(150, 150, 150, 0.1);*/
+	/*margin: 5px;*/
+	float: left;
+  }
+  
+
+  #cssmenu ul ul::after {
+    display: none;
+  }
+  #cssmenu #menu-button::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    /*border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;*/
+    right: 20px;
+    top: 31px;
+  }
+  #cssmenu #menu-button::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    /*border-top: 3px solid #fff;*/
+    right: 20px;
+    top: 42px;
+	background-color:inherit;
+  }
+  #cssmenu ul.open #menu-button::after,
+  #cssmenu ul.open #menu-button::before {
+    border-color: #fff;
+  }
+  
+  #cssmenu > ul.open{ padding:0px 0px 10px 0px ; background-color:RGBA(255,255,255,0.8);background-image: url(/web/20220424111352im_/http://hm-techno.com/images/logo_HMtechnologies.png); background-size: 372px; background-repeat: no-repeat; background-position: 1% 2%;}
+  #cssmenu ul > li a{ font-size:26pt ;}
+  #cssmenu ul > li.active {margin:0px 0px 8px 8px; top:8px; background-color:RGBA(2,86,138,0.8) !important; padding:3px 10px;}
+  #cssmenu ul > li.btn-langue-fr a,
+  #cssmenu ul > li.btn-langue-en a,
+  #cssmenu ul > li.btn-langue-es a{color: #fff !important; }
+
+	#cssmenu ul > li.btn-accueil-fr,
+	#cssmenu ul > li.btn-accueil-en,
+	#cssmenu ul > li.btn-accueil-es {width:auto !important; padding:5px 35px; margin:0px 0px 8px 8px; position:relative; top:8px;background-color:RGBA(110,110,110,0.8); height: 81px; }
+	#cssmenu ul > li.btn-accueil-fr img,
+	#cssmenu ul > li.btn-accueil-en img,
+	#cssmenu ul > li.btn-accueil-es img{ content:url(/web/20220424111352im_/http://hm-techno.com/images/btn-accueil-blc.png); height:30px;}
+	
+	#cssmenu ul > li.btn-services3D-fr,
+	#cssmenu ul > li.btn-usinagesCNC-fr,
+	#cssmenu ul > li.btn-realisations-fr,
+	#cssmenu ul > li.btn-equivalences-fr,
+	#cssmenu ul > li.btn-contacts-fr,
+	#cssmenu ul > li.btn-langue-fr,
+	
+	#cssmenu ul > li.btn-services3D-en,
+	#cssmenu ul > li.btn-usinagesCNC-en,
+	#cssmenu ul > li.btn-realisations-en,
+	#cssmenu ul > li.btn-equivalences-en,
+	#cssmenu ul > li.btn-contacts-en,
+	#cssmenu ul > li.btn-langue-en,
+	
+	#cssmenu ul > li.btn-services3D-es,
+	#cssmenu ul > li.btn-usinagesCNC-es,
+	#cssmenu ul > li.btn-realisations-es,
+	#cssmenu ul > li.btn-equivalences-es,
+	#cssmenu ul > li.btn-contacts-es,
+	#cssmenu ul > li.btn-langue-es { width:auto !important; padding:0px 10px 40px 10px; margin:0px 0px 8px 8px; position:relative; top:8px; border-right:0px solid #ddd; 
+	background-color:RGBA(110,110,110,0.8);}
+	
+	
+}
